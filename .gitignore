@@ -1,0 +1,126 @@
+# ---------------------------------------------------------
+# Dependencies
+# ---------------------------------------------------------
+node_modules/
+.pnp
+.pnp.*
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+jspm_packages/
+
+# Lock files (uncomment if you don't want to commit lock files)
+# package-lock.json
+# yarn.lock
+# pnpm-lock.yaml
+
+# ---------------------------------------------------------
+# Next.js
+# ---------------------------------------------------------
+.next/
+out/
+build/
+dist/
+.vercel
+next-env.d.ts
+
+# ---------------------------------------------------------
+# Production / Build artifacts
+# ---------------------------------------------------------
+*.tsbuildinfo
+.turbo/
+.swc/
+
+# ---------------------------------------------------------
+# Testing & Coverage
+# ---------------------------------------------------------
+coverage/
+.nyc_output/
+*.lcov
+
+# ---------------------------------------------------------
+# Environment & Secrets
+# ---------------------------------------------------------
+.env
+.env.local
+.env.*.local
+.env.development.local
+.env.production.local
+.env.test.local
+*.pem
+*.key
+secrets.json
+
+# ---------------------------------------------------------
+# Logs
+# ---------------------------------------------------------
+*.log
+logs/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.npm/
+.eslintcache
+.stylelintcache
+
+# ---------------------------------------------------------
+# Editor & IDE
+# ---------------------------------------------------------
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+.idea/
+*.iml
+*.swp
+*.swo
+*~
+.history/
+.fleet/
+
+# ---------------------------------------------------------
+# Operating System
+# ---------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ---------------------------------------------------------
+# AI / Tooling generated
+# ---------------------------------------------------------
+.cursorrules
+.windsurfrules
+.aider*
+.claude/
+.continue/
+
+# ---------------------------------------------------------
+# Misc
+# ---------------------------------------------------------
+.cache/
+.parcel-cache/
+.tmp/
+tmp/
+*.tgz
+*.tar.gz
+*.zip
