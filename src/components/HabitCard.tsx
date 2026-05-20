@@ -15,11 +15,14 @@ interface Props {
 }
 
 export function HabitCard({ habit, sortMode, onLongPress }: Props) {
-  const checkins = useHabitStore((s) =>
-    s.checkins.filter((c) => c.habitId === habit.id)
-  );
+  const allCheckins = useHabitStore((s) => s.checkins);
   const toggleCheckin = useHabitStore((s) => s.toggleCheckin);
   const [animating, setAnimating] = useState(false);
+
+  const checkins = useMemo(
+    () => allCheckins.filter((c) => c.habitId === habit.id),
+    [allCheckins, habit.id]
+  );
 
   const today = todayKey();
   const todayCheckin = useMemo(

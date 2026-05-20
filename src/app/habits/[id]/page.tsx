@@ -28,8 +28,10 @@ export default function HabitDetailPage() {
   const id = params.id;
 
   const habit = useHabitStore((s) => s.habits.find((h) => h.id === id));
-  const checkins = useHabitStore((s) =>
-    s.checkins.filter((c) => c.habitId === id)
+  const allCheckins = useHabitStore((s) => s.checkins);
+  const checkins = useMemo(
+    () => allCheckins.filter((c) => c.habitId === id),
+    [allCheckins, id]
   );
   const load = useHabitStore((s) => s.load);
   const loaded = useHabitStore((s) => s.loaded);

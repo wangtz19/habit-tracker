@@ -113,6 +113,8 @@ $RECYCLE.BIN/
 .aider*
 .claude/
 .continue/
+.clawhub/
+.codewiz/
 
 # ---------------------------------------------------------
 # Misc
